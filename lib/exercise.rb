@@ -19,4 +19,10 @@ require "./lib/order"
 
 # p Customer.where(state: "Colorado")
 
-p Customer.all.limit(5)
+#### the two methods below return the same thing
+#
+# p Customer.all.limit(5)
+#
+# p Customer.first(5)
+
+p Customer.order("name ASC")
