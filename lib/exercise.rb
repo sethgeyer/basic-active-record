@@ -25,4 +25,9 @@ require "./lib/order"
 #
 # p Customer.first(5)
 
-p Customer.order("name ASC")
+# p Customer.order("name ASC")
+
+# p Customer.order("name DESC")
+
+
+
