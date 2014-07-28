@@ -29,5 +29,7 @@ require "./lib/order"
 
 # p Customer.order("name DESC")
 
+# p Item.all
+
 
 
