@@ -6,4 +6,6 @@ require "./lib/order"
 
 #p Customer.all.count
 
-p Customer.first.name
+#p Customer.first.name
+
+p Customer.last 
