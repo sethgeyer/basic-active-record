@@ -17,3 +17,6 @@ require "./lib/order"
 # p Customer.where(id:3).first
 
 
+# p Customer.where(state: "Colorado")
+
+p Customer.all.limit(5)
