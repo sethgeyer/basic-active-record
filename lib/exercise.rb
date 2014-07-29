@@ -133,7 +133,17 @@ require "./lib/order"
 # orders = Order.where(customer_id: 2)
 # p Orderitem.joins(:item, :order)
 
-p Orderitem.all.count
+#p Orderitem.all.count
+
+
+#display all the item names from all the orders that have customer id = 2
+Item.joins(orderitems: [:order]).where(orders: {customer_id: 2}).uniq.each do |item|
+  puts "ID:#{item.id} Name:#{item.name}"
+end
+
+puts
+puts
+
 
 
 
